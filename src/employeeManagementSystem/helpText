@@ -1,0 +1,5 @@
+connectinName: ems
+hostname: localhost
+port 3307
+username root
+password: admin

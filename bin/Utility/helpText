@@ -1,0 +1,11 @@
+connectinName: ems
+hostname: localhost
+port 3307
+username root
+password: admin
+
+color theme
+rgb(34, 40, 49) 	black
+rgb(49, 54, 63)		dark grey
+rgb(118, 171, 174)	sky
+rgb(238, 238, 238)	white

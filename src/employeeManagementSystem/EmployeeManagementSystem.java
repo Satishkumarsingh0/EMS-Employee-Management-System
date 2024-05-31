@@ -69,7 +69,7 @@ public class EmployeeManagementSystem {
 			} catch (Exception e) {
 				System.out.println("Error occurred in Admin Panel");
 			} finally {
-				LoginPanel loginPanel = new LoginPanel();
+				new LoginPanel();
 			}
 
 		} catch (Exception e) {

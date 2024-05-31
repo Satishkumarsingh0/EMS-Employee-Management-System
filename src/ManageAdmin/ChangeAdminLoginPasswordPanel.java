@@ -27,7 +27,7 @@ public class ChangeAdminLoginPasswordPanel extends JFrame implements ActionListe
     public Cursor textCursor = Utils.textCursor;
     
 	private static final long serialVersionUID = 1L;
-	private String userid;
+	String userid;
 	private JLabel oldPasswordLabel, newPasswordFirstLabel, newPasswordSecondLabel;
 	private JPasswordField oldPasswordField, newPasswordFieldFirst, newPasswordFieldSecondField;
 	private JCheckBox showPassworCheckBox;

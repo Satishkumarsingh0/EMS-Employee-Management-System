@@ -17,11 +17,11 @@ public class AdminManagePanel extends JPanel implements ActionListener {
     Font font20 = Utils.f20bold;
     Color buttonBackgroundColor = new Color(185, 185, 185);
 
-    protected JButton dashboardButton, viewButton, addButton, modifyButton, deleteButton, viewDeletedButton;
-    protected JPanel mainPanel, navigationPanel, contentPanel;
-    protected CardLayout contentLayout;
-    protected JPanel dashboardContent, viewContent, addContent, modifyContent, deleteContent, viewDeletedContentJPanel;
-    private String userid;
+    private JButton dashboardButton, viewButton, addButton, modifyButton, deleteButton, viewDeletedButton;
+    private JPanel mainPanel, navigationPanel, contentPanel;
+    private CardLayout contentLayout;
+    private JPanel dashboardContent, viewContent, addContent, modifyContent, deleteContent, viewDeletedContentJPanel;
+    String userid;
     public AdminManagePanel(String userid) {
     	this.userid = userid;
         mainPanel = new JPanel(new BorderLayout(4, 4));

@@ -58,14 +58,14 @@ public class EmployeePieChart extends JPanel {
             String query = "SELECT department, COUNT(*) AS employee_count FROM employee GROUP BY department";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultSet = statement.executeQuery();
-            DefaultPieDataset newDataset = new DefaultPieDataset(); // Create a new dataset
+            DefaultPieDataset newDataset = new DefaultPieDataset();
 
             while (resultSet.next()) {
                 String department = resultSet.getString("department");
                 int employeeCount = resultSet.getInt("employee_count");
-                newDataset.setValue(department, employeeCount); // Populate the new dataset
+                newDataset.setValue(department, employeeCount);
             }
-            dataset = newDataset; // Assign the new dataset to the instance variable
+            dataset = newDataset;
             repaint();
         } catch (SQLException e) {
             e.printStackTrace();

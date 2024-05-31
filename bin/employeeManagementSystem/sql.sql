@@ -66,3 +66,5 @@ department varchar(50) default 'administration', level varchar(20) default 'admi
  
  show databases;
  select * from admins where userid = "sa01";
+ 
+ DESCRIBE ems;

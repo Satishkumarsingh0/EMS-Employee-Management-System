@@ -10,7 +10,6 @@ public class Admin {
 	String userid;
 	public Admin(String userid) {
 		this.userid = userid;
-		
 }
     String getPassword(String userid) {
         String oldPasswordString = null;
@@ -24,7 +23,6 @@ public class Admin {
                 oldPasswordString = resultSet.getString(1);
             }
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
         return oldPasswordString;
@@ -51,18 +49,12 @@ public class Admin {
     		prepareStatement.setString(1, userid);
     		
     		ResultSet resultSet = prepareStatement.executeQuery();
-    		if (resultSet.next()) { // Check if there are results before getting data
+    		if (resultSet.next()) { 
     			oldPasswordString = resultSet.getString(1);
     		}
     	} catch (Exception e) {
-    		// TODO: handle exception
     		e.printStackTrace();
     	}
     	return oldPasswordString;
     }
-
-//    public static void main(String[] args) {
-//        new Admin().getPassword("sa01");
-//        new Admin().getAdminName("shamim");
-//    }
 }

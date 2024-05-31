@@ -37,7 +37,7 @@ public class EmployeeManagePanel extends JPanel implements ActionListener, Mouse
     private CardLayout contentLayout;
     private JPanel dashboardContent, addContent, modifyContent, deleteContent, viewDeletedContentJPanel;
     private JButton profileButton;
-    private String userid;
+    String userid;
     private ProfilePopup profilePopup;
     public EmployeeManagePanel(String userid) {
     	this.userid = userid;
